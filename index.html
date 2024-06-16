@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt - Nursery-Collection</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eabdbd;
+            padding: 20px;
+        }
+        .receipt-container {
+            max-width: 600px;
+            margin: auto;
+            background: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(6, 6, 6, 0.1);
+            font-family: cursive;
+            
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+            color:  #b30000;
+            font-family: monospace;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header p {
+            margin: 5px 0 0;
+        }
+        .details, .items, .total {
+            margin-bottom: 20px;
+        }
+        .details p, .total p {
+            margin: 5px 0;
+        }
+        .items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .items th, .items td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .items th {
+            background-color: #f67676;
+            color:#d50357;
+        }
+        .total {
+            text-align: right;
+        }
+        .receipt-footer
+        {
+            text-align: center;
+            padding:3px 0;
+            font-size: 15px;
+            background-color: #f64d4d;
+        }
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .receipt-container {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 26px;
+            }
+            .items th, .items td {
+                padding: 7px;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .receipt-container {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 30px;
+            }
+            .items th, .items td {
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .receipt-container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 34px;
+            }
+            .items th, .items td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="receipt-container">
+    <div class="header">
+        <h1>Nursery Collection</h1>
+        <p>Ahemdnagar,Nursary home,Maharashtra,India</p>
+        <p>Phone: +91 67892 82134</p>
+        <p>Date: 16 June 2024</p>
+    </div>
+    
+    <div class="details">
+        <p><strong>Customer Name:</strong>Sakshi Dagade</p>
+        <p><strong>Address:</strong>Bavdhan,BK,Pune,India</p>
+    </div>
+    
+    <div class="items">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bee Garden Combo</td>
+                    <td>2</td>
+                    <td>₹2000</td>
+                    <td>₹4000</td>
+                </tr>
+                <tr>
+                    <td>Exotic Plants Pack</td>
+                    <td>3</td>
+                    <td>₹1999</td>
+                    <td>₹5997</td>
+                </tr>
+                <tr>
+                    <td>Floral Plant Pack</td>
+                    <td>2</td>
+                    <td>₹2750</td>
+                    <td>₹5500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="total">
+        <p><strong>Subtotal:</strong> ₹15497.00</p>
+        <p><strong>Tax (15%):</strong> ₹2324.55</p>
+        <p><strong>Total:</strong> ₹17821.55</p>
+        
+    </div>
+    <div class="receipt-footer">
+        <p>
+            Thank You for your payment.
+        </p>
+</div>
+</body>
+</html>
